@@ -14,6 +14,11 @@ body{
     font-family: Merienda;
 }
 
+a{
+    text-decoration: none;
+    color: #101813;
+}
+
 #nav-bar{
     text-align: center;
     border-bottom: 1px solid #ABC8B5;
@@ -36,6 +41,28 @@ body{
     cursor: pointer;
     font-family: Updock;
     font-weight: bold;
+}
+
+#nosotros{
+    margin: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#promocionesDestacadas{
+    margin: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#promocionesDestacadas > span{
+
+    color: #2a9d8f;
+
 }
 
 /* Main img ---------------- ---------------- */
@@ -69,16 +96,42 @@ body{
     border-radius: 5px;
 }
 
+/* Promociones + ---------------- ---------------- */
+
+.img-promociones{
+    box-sizing: border-box;
+    height: 160px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #344237;
+    border-radius: 5px;
+}
+
+.elemento-promociones{
+    box-sizing: border-box;
+    padding: 5px;
+    float: right;
+    width: 50%;
+    
+}
+
 /* Plantas ---------------- ---------------- */
 
 .galeria-plantas{
     width: 100%;
+    overflow: hidden;
+}
+
+.content-title{
+    text-align: center;
 }
 
 #plantas{
-    margin: 25px;
-    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
     text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .img-galeria{
@@ -148,6 +201,8 @@ body{
     text-align: center;
     text-transform: uppercase;
     margin: 25px;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .element-cliente-calificacion{
@@ -257,6 +312,45 @@ body{
     
 }
 
+@media screen and (min-width: 750px){
+
+    #opciones-nav > li{
+
+        display: inline-block;
+        list-style: none;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px;
+        cursor: pointer;
+        
+    }
+   
+    .elemento-promociones{
+        box-sizing: border-box;
+        padding: 1.5rem;
+        float: right;
+        width: 50%;
+        
+    }
+    
+    .galeria-promociones{
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+    .img-promociones{
+        box-sizing: border-box;
+        height: 160px;
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #344237;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+}
+
+
 /* Table 768px ---------------- ---------------- */
 
 @media screen and (min-width: 824px){
@@ -305,6 +399,13 @@ body{
         position: relative;
         text-align: center;
         width: 1024px;
+        margin: auto;
+    }
+
+    .galeria-promociones{
+        width: 1024px;
+        margin-bottom: 15px;
+        overflow: hidden;
         margin: auto;
     }
 
