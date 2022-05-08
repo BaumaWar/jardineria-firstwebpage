@@ -19,6 +19,25 @@ a{
     color: #101813;
 }
 
+footer{
+    text-align: center;
+    margin-top: 100px;
+    border-bottom: 1px solid #ABC8B5;
+    border-top: 1px solid #ABC8B5;
+    padding: 10px;
+    font-family: Updock;
+    font-size: 30px;
+    
+}
+
+footer > div{
+    display: inline-block;
+}
+
+#dev-frontend{
+    display: none;
+}
+
 #nav-bar{
     text-align: center;
     border-bottom: 1px solid #ABC8B5;
